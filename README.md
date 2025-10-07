@@ -294,7 +294,7 @@ Use short, descriptive messages:
 
 ## License / Credits
 
-Created for PRG2782 project (One Kick Heroes Academy). Educational use only. Add a LICENSE file if needed.
+Created for PRG2782 project (One Kick Heroes Academy). Educational use only.
 
 ---
 
