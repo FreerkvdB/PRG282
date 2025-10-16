@@ -1,6 +1,6 @@
-﻿namespace PRG282_Project
+namespace PRG282_Project
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,188 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.txtHeroID = new System.Windows.Forms.TextBox();
+            this.txtHeroName = new System.Windows.Forms.TextBox();
+            this.txtHeroAge = new System.Windows.Forms.TextBox();
+            this.txtHeroSuperPower = new System.Windows.Forms.TextBox();
+            this.numHeroExamScore = new System.Windows.Forms.NumericUpDown();
+            this.lblHeroID = new System.Windows.Forms.Label();
+            this.lblHeroName = new System.Windows.Forms.Label();
+            this.lblHeroAge = new System.Windows.Forms.Label();
+            this.lblHeroSuperpower = new System.Windows.Forms.Label();
+            this.lblExamScore = new System.Windows.Forms.Label();
+            this.btnAddHero = new System.Windows.Forms.Button();
+            this.btnViewAll = new System.Windows.Forms.Button();
+            this.dgvHeroes = new System.Windows.Forms.DataGridView();
+            this.gbSummary = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.numHeroExamScore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHeroes)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // txtHeroID
+            // 
+            this.txtHeroID.Location = new System.Drawing.Point(155, 137);
+            this.txtHeroID.Name = "txtHeroID";
+            this.txtHeroID.Size = new System.Drawing.Size(167, 20);
+            this.txtHeroID.TabIndex = 0;
+            // 
+            // txtHeroName
+            // 
+            this.txtHeroName.Location = new System.Drawing.Point(155, 187);
+            this.txtHeroName.Name = "txtHeroName";
+            this.txtHeroName.Size = new System.Drawing.Size(167, 20);
+            this.txtHeroName.TabIndex = 1;
+            // 
+            // txtHeroAge
+            // 
+            this.txtHeroAge.Location = new System.Drawing.Point(155, 236);
+            this.txtHeroAge.Name = "txtHeroAge";
+            this.txtHeroAge.Size = new System.Drawing.Size(167, 20);
+            this.txtHeroAge.TabIndex = 2;
+            // 
+            // txtHeroSuperPower
+            // 
+            this.txtHeroSuperPower.Location = new System.Drawing.Point(155, 287);
+            this.txtHeroSuperPower.Name = "txtHeroSuperPower";
+            this.txtHeroSuperPower.Size = new System.Drawing.Size(167, 20);
+            this.txtHeroSuperPower.TabIndex = 3;
+            // 
+            // numHeroExamScore
+            // 
+            this.numHeroExamScore.Location = new System.Drawing.Point(155, 343);
+            this.numHeroExamScore.Name = "numHeroExamScore";
+            this.numHeroExamScore.Size = new System.Drawing.Size(167, 20);
+            this.numHeroExamScore.TabIndex = 5;
+            // 
+            // lblHeroID
+            // 
+            this.lblHeroID.AutoSize = true;
+            this.lblHeroID.Location = new System.Drawing.Point(54, 143);
+            this.lblHeroID.Name = "lblHeroID";
+            this.lblHeroID.Size = new System.Drawing.Size(44, 13);
+            this.lblHeroID.TabIndex = 6;
+            this.lblHeroID.Text = "Hero ID";
+            // 
+            // lblHeroName
+            // 
+            this.lblHeroName.AutoSize = true;
+            this.lblHeroName.Location = new System.Drawing.Point(54, 187);
+            this.lblHeroName.Name = "lblHeroName";
+            this.lblHeroName.Size = new System.Drawing.Size(35, 13);
+            this.lblHeroName.TabIndex = 7;
+            this.lblHeroName.Text = "Name";
+            // 
+            // lblHeroAge
+            // 
+            this.lblHeroAge.AutoSize = true;
+            this.lblHeroAge.Location = new System.Drawing.Point(54, 239);
+            this.lblHeroAge.Name = "lblHeroAge";
+            this.lblHeroAge.Size = new System.Drawing.Size(26, 13);
+            this.lblHeroAge.TabIndex = 8;
+            this.lblHeroAge.Text = "Age";
+            // 
+            // lblHeroSuperpower
+            // 
+            this.lblHeroSuperpower.AutoSize = true;
+            this.lblHeroSuperpower.Location = new System.Drawing.Point(54, 294);
+            this.lblHeroSuperpower.Name = "lblHeroSuperpower";
+            this.lblHeroSuperpower.Size = new System.Drawing.Size(64, 13);
+            this.lblHeroSuperpower.TabIndex = 9;
+            this.lblHeroSuperpower.Text = "Superpower";
+            // 
+            // lblExamScore
+            // 
+            this.lblExamScore.AutoSize = true;
+            this.lblExamScore.Location = new System.Drawing.Point(54, 350);
+            this.lblExamScore.Name = "lblExamScore";
+            this.lblExamScore.Size = new System.Drawing.Size(64, 13);
+            this.lblExamScore.TabIndex = 10;
+            this.lblExamScore.Text = "Exam Score";
+            // 
+            // btnAddHero
+            // 
+            this.btnAddHero.Location = new System.Drawing.Point(57, 399);
+            this.btnAddHero.Name = "btnAddHero";
+            this.btnAddHero.Size = new System.Drawing.Size(75, 23);
+            this.btnAddHero.TabIndex = 11;
+            this.btnAddHero.Text = "Add Hero";
+            this.btnAddHero.UseVisualStyleBackColor = true;
+            this.btnAddHero.Click += new System.EventHandler(this.btnAddHero_Click);
+            // 
+            // btnViewAll
+            // 
+            this.btnViewAll.Location = new System.Drawing.Point(207, 399);
+            this.btnViewAll.Name = "btnViewAll";
+            this.btnViewAll.Size = new System.Drawing.Size(115, 23);
+            this.btnViewAll.TabIndex = 12;
+            this.btnViewAll.Text = "View All Heroes";
+            this.btnViewAll.UseVisualStyleBackColor = true;
+            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
+            // 
+            // dgvHeroes
+            // 
+            this.dgvHeroes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHeroes.Location = new System.Drawing.Point(396, 143);
+            this.dgvHeroes.Name = "dgvHeroes";
+            this.dgvHeroes.Size = new System.Drawing.Size(536, 279);
+            this.dgvHeroes.TabIndex = 13;
+            // 
+            // gbSummary
+            // 
+            this.gbSummary.Location = new System.Drawing.Point(396, 449);
+            this.gbSummary.Name = "gbSummary";
+            this.gbSummary.Size = new System.Drawing.Size(200, 117);
+            this.gbSummary.TabIndex = 14;
+            this.gbSummary.TabStop = false;
+            this.gbSummary.Text = "Summary:";
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1006, 625);
+            this.Controls.Add(this.gbSummary);
+            this.Controls.Add(this.dgvHeroes);
+            this.Controls.Add(this.btnViewAll);
+            this.Controls.Add(this.btnAddHero);
+            this.Controls.Add(this.lblExamScore);
+            this.Controls.Add(this.lblHeroSuperpower);
+            this.Controls.Add(this.lblHeroAge);
+            this.Controls.Add(this.lblHeroName);
+            this.Controls.Add(this.lblHeroID);
+            this.Controls.Add(this.numHeroExamScore);
+            this.Controls.Add(this.txtHeroSuperPower);
+            this.Controls.Add(this.txtHeroAge);
+            this.Controls.Add(this.txtHeroName);
+            this.Controls.Add(this.txtHeroID);
+            this.Name = "MainForm";
+            this.Text = "One Kick Heroes";
+            ((System.ComponentModel.ISupportInitialize)(this.numHeroExamScore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHeroes)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txtHeroID;
+        private System.Windows.Forms.TextBox txtHeroName;
+        private System.Windows.Forms.TextBox txtHeroAge;
+        private System.Windows.Forms.TextBox txtHeroSuperPower;
+        private System.Windows.Forms.NumericUpDown numHeroExamScore;
+        private System.Windows.Forms.Label lblHeroID;
+        private System.Windows.Forms.Label lblHeroName;
+        private System.Windows.Forms.Label lblHeroAge;
+        private System.Windows.Forms.Label lblHeroSuperpower;
+        private System.Windows.Forms.Label lblExamScore;
+        private System.Windows.Forms.Button btnAddHero;
+        private System.Windows.Forms.Button btnViewAll;
+        private System.Windows.Forms.DataGridView dgvHeroes;
+        private System.Windows.Forms.GroupBox gbSummary;
     }
+}
+
+
 }
 
