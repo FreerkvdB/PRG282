@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\datalayer\\superhero_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\datalayer\\superhero_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:datalayer\\superhero_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\businesslogiclayer\\superhero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\datalayer\\summary-report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:datalayer\\summary-report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\businesslogiclayer\\superhero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:businesslogiclayer\\superhero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\datalayer\\summary-report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:datalayer\\summary-report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,19 +38,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Superhero.cs",
               "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\BusinessLogicLayer\\Superhero.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Superhero.cs",
               "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\BusinessLogicLayer\\Superhero.cs",
               "RelativeToolTip": "BusinessLogicLayer\\Superhero.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAIA/wBAAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T16:35:28.43Z"
+              "WhenOpened": "2025-10-10T16:35:28.43Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Summary-Report.cs",
               "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\DataLayer\\Summary-Report.cs",
               "RelativeDocumentMoniker": "DataLayer\\Summary-Report.cs",
@@ -58,7 +59,8 @@
               "RelativeToolTip": "DataLayer\\Summary-Report.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T16:35:04.261Z"
+              "WhenOpened": "2025-10-10T16:35:04.261Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -68,14 +70,14 @@
               "RelativeDocumentMoniker": "DataLayer\\Superhero_Repo.cs",
               "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\DataLayer\\Superhero_Repo.cs",
               "RelativeToolTip": "DataLayer\\Superhero_Repo.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAYwFkAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAADQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-10T16:34:16.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",

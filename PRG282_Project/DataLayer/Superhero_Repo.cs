@@ -11,83 +11,47 @@ namespace PRG282_Project.Data_Layer
 {
     internal class Superhero_Repo
     {
-        private readonly string filepath = "superhero.txt"; // Create a text file to store superhero data
-
-        // We create a list to hold superhero objects
-        public List<Superhero> GetAllHeroes()
+        public void Write(List<Superhero> superheroes)
         {
-            try
+            string filename = @"superheroes.txt"; //Create a text file to store the data
+
+            FileStream fs = new FileStream(filename, FileMode.Create); //Create a file stream to write to the file
+
+            using (StreamWriter sw = new StreamWriter(fs)) // Create a strem writer to write to the file
             {
-                var heroes = new List<Superhero>();
-
-                if (!File.Exists(filepath))
+                string text;
+                foreach (Superhero superhero in superheroes)
                 {
-                    File.Create(filepath).Close(); // Create the file if it doesn't exist
-                }
+                    text = superhero.SuperheroID1 + "," + superhero.SuperheroName1 + "," + superhero.SuperheroAge1 + "," 
+                           + superhero.SuperPower1 + "," + superhero.ExamScore1 + "," + superhero.Rank1 + "," + superhero.ThreadLevel1;
 
-                // Read all lines from the file and parse them into Superhero objects
-                foreach (string line in File.ReadAllLines(filepath))
-                {
-                    var data = line.Split(','); // Assuming data is comma-separated
-
-                    if (data.Length >= 7) // Ensure there are enough data fields
-                    {
-                        var hero = new Superhero
-                        (
-                           int.Parse(data[0]),
-                           data[1],
-                           int.Parse(data[2]),
-                           data[3],
-                           int.Parse(data[4]),
-                           data[5],
-                           data[6]
-                        );
-                        heroes.Add(hero);
-                    }
-                }
-
-                return heroes;
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"An error occurred while reading the file: {ex.Message}");
-                return new List<Superhero>();
-            }
-        }
-
-        //Save all heroes to the file
-        public void SaveAllHeroes(List<Superhero> heroes)
-        {
-            try
-            {
-                var lines = new List<string>(); // Create a list to hold the lines to write to the file
-
-                foreach (var hero in heroes)
-                {
-                    lines = heroes.Select(h => $"{h.SuperheroID1}\t {h.SuperheroName1}\t {h.SuperheroAge1}\t {h.SuperPower1}\t {h.ExamScore1}\t {h.Rank1}\t {h.ThreadLevel1}").ToList();
-                    File.WriteAllLines(filepath, lines);
+                    sw.WriteLine(text); // Write the text to the file
                 }
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"An error occurred while writing to the file: {ex.Message}");
-            }
+
+            fs.Close(); // Close the file stream
+            Console.WriteLine("Data has been added successfully to " + filename););
+            Console.ReadLine();
         }
 
-        // Delete a hero from file
-        public void DeleteHero(int superheroID)
+        public List<Superhero> Read(List<Superhero> superheroes)
         {
-            try
+            string filename = @"superheroes.txt";
+            FileStream fs = new FileStream(filename, FileMode.OpenOrCreate); //Create a file stream to read from the file
+
+            StreamReader sr  = new StreamReader(fs); // Create a strem reader to read from the file
+            string text;
+            while ((text = sr.ReadLine()) != null)
             {
-                var heroes = GetAllHeroes();
-                heroes.RemoveAll(h => h.SuperheroID1 == superheroID);
-                SaveAllHeroes(heroes);
+                string[] strings = text.Split(',');
+                Superhero newsuperhero = new Superhero (int.Parse(strings[0]), strings[1], int.Parse(strings[2]), 
+                                         strings[3], int.Parse(strings[4]), strings[5], strings[6]);
+                superheroes.Add(newsuperhero);
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"An error occurred while deleting the hero: {ex.Message}");
-            }
+            sr.Close(); // Close the stream reader
+            fs.Close(); // Close the file stream
+            return superheroes;
         }
+        
     }
 }
