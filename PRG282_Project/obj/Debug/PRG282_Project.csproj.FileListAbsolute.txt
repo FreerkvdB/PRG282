@@ -1,0 +1,10 @@
+C:\Users\vdbos\OneDrive\Documents\GitHub\PRG282\PRG282_Project\bin\Debug\PRG282_Project.exe.config
+C:\Users\vdbos\OneDrive\Documents\GitHub\PRG282\PRG282_Project\bin\Debug\PRG282_Project.exe
+C:\Users\vdbos\OneDrive\Documents\GitHub\PRG282\PRG282_Project\bin\Debug\PRG282_Project.pdb
+C:\Users\vdbos\OneDrive\Documents\GitHub\PRG282\PRG282_Project\obj\Debug\PRG282_Project.csproj.AssemblyReference.cache
+C:\Users\vdbos\OneDrive\Documents\GitHub\PRG282\PRG282_Project\obj\Debug\PRG282_Project.Properties.Resources.resources
+C:\Users\vdbos\OneDrive\Documents\GitHub\PRG282\PRG282_Project\obj\Debug\PRG282_Project.csproj.GenerateResource.cache
+C:\Users\vdbos\OneDrive\Documents\GitHub\PRG282\PRG282_Project\obj\Debug\PRG282_Project.csproj.CoreCompileInputs.cache
+C:\Users\vdbos\OneDrive\Documents\GitHub\PRG282\PRG282_Project\obj\Debug\PRG282_Project.exe
+C:\Users\vdbos\OneDrive\Documents\GitHub\PRG282\PRG282_Project\obj\Debug\PRG282_Project.pdb
+C:\Users\vdbos\OneDrive\Documents\GitHub\PRG282\PRG282_Project\obj\Debug\PRG282_Project.exe.config
