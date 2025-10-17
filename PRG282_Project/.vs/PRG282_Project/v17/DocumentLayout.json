@@ -3,8 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\businesslogiclayer\\superhero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:businesslogiclayer\\superhero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\presentationlayer\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:presentationlayer\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\presentationlayer\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:presentationlayer\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\presentationlayer\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:presentationlayer\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\presentationlayer\\viewall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:presentationlayer\\viewall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\presentationlayer\\summary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:presentationlayer\\summary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\presentationlayer\\search.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:presentationlayer\\search.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\presentationlayer\\add.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:presentationlayer\\add.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\presentationlayer\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:presentationlayer\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\datalayer\\superhero_repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,8 +55,8 @@
       "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:datalayer\\summary-report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|c:\\users\\vdbos\\onedrive\\documents\\github\\prg282\\prg282_project\\businesslogiclayer\\superhero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C44D6C7-E50E-4480-83BB-C41ADE6F8BF6}|PRG282_Project.csproj|solutionrelative:businesslogiclayer\\superhero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,32 +66,151 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Summary.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Summary.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Summary.cs",
+              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Summary.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\Summary.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T09:31:22.694Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Superhero.cs",
-              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\BusinessLogicLayer\\Superhero.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Superhero.cs",
-              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\BusinessLogicLayer\\Superhero.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Superhero.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAIAwwBAAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ViewAll.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\ViewAll.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\ViewAll.cs",
+              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\ViewAll.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\ViewAll.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T16:35:28.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T09:31:09.886Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Delete.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Delete.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Delete.cs",
+              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Delete.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\Delete.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T09:30:45.847Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Update.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Update.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Update.cs",
+              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Update.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\Update.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T09:30:27.027Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Add.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Add.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Add.cs",
+              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Add.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\Add.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T16:33:07.518Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Search.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Search.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Search.cs",
+              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Search.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\Search.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T09:27:24.14Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAASwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T09:19:04.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\Main.cs [Design]",
+              "RelativeToolTip": "Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T09:08:12.421Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Add.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Add.Designer.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Add.Designer.cs",
+              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Add.Designer.cs",
+              "RelativeToolTip": "PresentationLayer\\Add.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T09:05:05.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Add.cs",
+              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Add.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Add.cs",
+              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\PresentationLayer\\Add.cs",
+              "RelativeToolTip": "PresentationLayer\\Add.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T09:05:05.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T09:05:23.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Summary-Report.cs",
               "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\DataLayer\\Summary-Report.cs",
               "RelativeDocumentMoniker": "DataLayer\\Summary-Report.cs",
@@ -59,11 +218,25 @@
               "RelativeToolTip": "DataLayer\\Summary-Report.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T16:35:04.261Z"
+              "WhenOpened": "2025-10-10T16:35:04.261Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
+              "Title": "Superhero.cs",
+              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\BusinessLogicLayer\\Superhero.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Superhero.cs",
+              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\BusinessLogicLayer\\Superhero.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Superhero.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAIA/wBAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T16:35:28.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Superhero_Repo.cs",
               "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\DataLayer\\Superhero_Repo.cs",
               "RelativeDocumentMoniker": "DataLayer\\Superhero_Repo.cs",
@@ -73,17 +246,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-10T16:34:16.268Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\vdbos\\OneDrive\\Documents\\GitHub\\PRG282\\PRG282_Project\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T16:33:07.518Z"
             }
           ]
         }
