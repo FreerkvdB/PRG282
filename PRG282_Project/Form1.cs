@@ -1,49 +1,35 @@
+using PRG282_Project.DataLayer;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace PRG282_Project
 {
     public partial class MainForm : Form
     {
+        private Superhero_repo repo = new Superhero_repo(); // repo instance
+        private string originalHeroID; // stores currently selected hero ID
+
         public MainForm()
         {
-            InitializeComponent();
+            InitializeComponent(); // initialize form components
         }
 
-        private (string rank, string threat) GetRankAndThreat(int score)
+        private void MainForm_Load(object sender, EventArgs e)
         {
-            if (score >= 81)
-                return ("S-Rank", "Finals Week");
-            else if (score >= 61)
-                return ("A-Rank", "Midterm Madness");
-            else if (score >= 41)
-                return ("B-Rank", "Group Project Gone Wrong");
-            else
-                return ("C-Rank", "Pop Quiz");
+            repo.LoadHeroesIntoGrid(dgvHeroes); // load heroes into grid
         }
 
         private void btnAddHero_Click(object sender, EventArgs e)
         {
             try
             {
-
-                string heroID = txtHeroID.Text;
+                string heroID = txtHeroID.Text; // get input
                 string name = txtHeroName.Text;
-                int age = int.Parse(txtHeroAge.Text);
                 string power = txtHeroSuperPower.Text;
+                int age = int.Parse(txtHeroAge.Text);
                 int score = (int)numHeroExamScore.Value;
 
-                if (string.IsNullOrWhiteSpace(heroID) || string.IsNullOrWhiteSpace(name) ||
-                string.IsNullOrWhiteSpace(power))
+                if (string.IsNullOrWhiteSpace(heroID) || string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(power))
                 {
                     MessageBox.Show("Please fill in all required fields.", "Input Error");
                     return;
@@ -55,24 +41,10 @@ namespace PRG282_Project
                     return;
                 }
 
-                var result = GetRankAndThreat(score);
-                string rank = result.rank;
-                string threat = result.threat;
-
-                string record = $"{heroID},{name},{age},{power},{score},{rank},{threat}";
-
-                string projectFolder = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\..\"));
-                string dataFolder = Path.Combine(projectFolder, "DataLayer");
-                Directory.CreateDirectory(dataFolder);
-                string filePath = Path.Combine(dataFolder, "superheroes.txt");
-                File.AppendAllText(filePath, record + Environment.NewLine);
-
-                MessageBox.Show("Superhero added successfully!", "Success");
-                txtHeroID.Clear();
-                txtHeroName.Clear();
-                txtHeroAge.Clear();
-                txtHeroSuperPower.Clear();
-                numHeroExamScore.Value = 0;
+                repo.AddHero(heroID, name, age, power, score); // add hero to file
+                repo.LoadHeroesIntoGrid(dgvHeroes); // refresh grid
+                ClearInputs(); // clear inputs
+                dgvHeroes.ClearSelection(); // deselect grid
             }
             catch (FormatException)
             {
@@ -80,60 +52,84 @@ namespace PRG282_Project
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}", "File Error");
+                MessageBox.Show($"Error: {ex.Message}", "Unexpected Error");
             }
         }
 
-        private void LoadHeroesIntoGrid()
+        private void btnDeleteHero_Click(object sender, EventArgs e)
         {
+            if (dgvHeroes.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a hero to delete.", "No Selection");
+                return;
+            }
+
+            string heroID = dgvHeroes.SelectedRows[0].Cells["Hero ID"].Value.ToString(); // get selected hero
+            var confirm = MessageBox.Show($"Delete hero {heroID}?", "Confirm", MessageBoxButtons.YesNo);
+            if (confirm == DialogResult.Yes)
+            {
+                repo.DeleteHero(heroID); // delete hero from file
+                repo.LoadHeroesIntoGrid(dgvHeroes); // refresh grid
+                ClearInputs(); // clear inputs
+                dgvHeroes.ClearSelection(); // deselect grid
+            }
+        }
+
+        private void btnEditHero_Click(object sender, EventArgs e)
+        {
+            if (dgvHeroes.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a hero to edit.", "No Selection");
+                return;
+            }
+
             try
             {
-                string projectFolder = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\..\"));
-                string dataFolder = Path.Combine(projectFolder, "DataLayer");
-                string filePath = Path.Combine(dataFolder, "superheroes.txt");
+                string heroID = txtHeroID.Text; // get inputs
+                string name = txtHeroName.Text;
+                string power = txtHeroSuperPower.Text;
+                int age = int.Parse(txtHeroAge.Text);
+                int score = (int)numHeroExamScore.Value;
 
-                if (!File.Exists(filePath))
-                {
-                    MessageBox.Show("No superheroes found.", "Info");
-                    dgvHeroes.DataSource = null;
-                    return;
-                }
-
-                var lines = File.ReadAllLines(filePath);
-
-                DataTable dt = new DataTable();
-                dt.Columns.Add("Hero ID");
-                dt.Columns.Add("Name");
-                dt.Columns.Add("Age");
-                dt.Columns.Add("Superpower");
-                dt.Columns.Add("Exam Score");
-                dt.Columns.Add("Rank");
-                dt.Columns.Add("Threat Level");
-
-                foreach (var line in lines)
-                {
-                    var parts = line.Split(',');
-                    if (parts.Length == 7)
-                    {
-                        dt.Rows.Add(parts);
-                    }
-                }
-
-                dgvHeroes.DataSource = dt;
-
-                dgvHeroes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                repo.EditHero(originalHeroID, heroID, name, age, power, score); // update hero
+                repo.LoadHeroesIntoGrid(dgvHeroes); // refresh grid
+                ClearInputs(); // clear inputs
+                dgvHeroes.ClearSelection(); // deselect grid
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error loading heroes: {ex.Message}", "Error");
+                MessageBox.Show($"Error: {ex.Message}", "Update Error");
             }
         }
-        private void btnViewAll_Click(object sender, EventArgs e)
+
+        private void dgvHeroes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            LoadHeroesIntoGrid();
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvHeroes.Rows[e.RowIndex]; // get clicked row
+                txtHeroID.Text = row.Cells["Hero ID"].Value.ToString();
+                txtHeroName.Text = row.Cells["Name"].Value.ToString();
+                txtHeroAge.Text = row.Cells["Age"].Value.ToString();
+                txtHeroSuperPower.Text = row.Cells["Superpower"].Value.ToString();
+                numHeroExamScore.Value = int.Parse(row.Cells["Exam Score"].Value.ToString());
+                originalHeroID = row.Cells["Hero ID"].Value.ToString(); // store original ID
+            }
+        }
+
+        private void ClearInputs()
+        {
+            txtHeroID.Clear();
+            txtHeroName.Clear();
+            txtHeroAge.Clear();
+            txtHeroSuperPower.Clear();
+            numHeroExamScore.Value = 0; 
+            originalHeroID = null; 
         }
     }
 }
+
+
+
 
 /*
  * Labels:
@@ -152,6 +148,7 @@ namespace PRG282_Project
  * 
  * Buttons:
  * btnAddHero
+ * btnDeleteHero
  * 
  * Data Grid View:
  * dgvHeroes
