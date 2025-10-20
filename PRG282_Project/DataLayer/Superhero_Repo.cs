@@ -30,7 +30,7 @@ namespace PRG282_Project.Data_Layer
             }
 
             fs.Close(); // Close the file stream
-            Console.WriteLine("Data has been added successfully to " + filename););
+            Console.WriteLine("Data has been added successfully to " + filename);
             Console.ReadLine();
         }
 
