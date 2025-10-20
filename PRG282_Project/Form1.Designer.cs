@@ -1,3 +1,5 @@
+using System;
+
 namespace PRG282_Project
 {
     partial class MainForm
@@ -39,9 +41,10 @@ namespace PRG282_Project
             this.lblHeroSuperpower = new System.Windows.Forms.Label();
             this.lblExamScore = new System.Windows.Forms.Label();
             this.btnAddHero = new System.Windows.Forms.Button();
-            this.btnViewAll = new System.Windows.Forms.Button();
+            this.btnDeleteHero = new System.Windows.Forms.Button();
             this.dgvHeroes = new System.Windows.Forms.DataGridView();
             this.gbSummary = new System.Windows.Forms.GroupBox();
+            this.btnEditHero = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numHeroExamScore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHeroes)).BeginInit();
             this.SuspendLayout();
@@ -136,15 +139,15 @@ namespace PRG282_Project
             this.btnAddHero.UseVisualStyleBackColor = true;
             this.btnAddHero.Click += new System.EventHandler(this.btnAddHero_Click);
             // 
-            // btnViewAll
+            // btnDeleteHero
             // 
-            this.btnViewAll.Location = new System.Drawing.Point(207, 399);
-            this.btnViewAll.Name = "btnViewAll";
-            this.btnViewAll.Size = new System.Drawing.Size(115, 23);
-            this.btnViewAll.TabIndex = 12;
-            this.btnViewAll.Text = "View All Heroes";
-            this.btnViewAll.UseVisualStyleBackColor = true;
-            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
+            this.btnDeleteHero.Location = new System.Drawing.Point(626, 449);
+            this.btnDeleteHero.Name = "btnDeleteHero";
+            this.btnDeleteHero.Size = new System.Drawing.Size(115, 23);
+            this.btnDeleteHero.TabIndex = 12;
+            this.btnDeleteHero.Text = "Delete Hero";
+            this.btnDeleteHero.UseVisualStyleBackColor = true;
+            this.btnDeleteHero.Click += new System.EventHandler(this.btnDeleteHero_Click);
             // 
             // dgvHeroes
             // 
@@ -153,6 +156,7 @@ namespace PRG282_Project
             this.dgvHeroes.Name = "dgvHeroes";
             this.dgvHeroes.Size = new System.Drawing.Size(536, 279);
             this.dgvHeroes.TabIndex = 13;
+            this.dgvHeroes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHeroes_CellClick);
             // 
             // gbSummary
             // 
@@ -163,14 +167,25 @@ namespace PRG282_Project
             this.gbSummary.TabStop = false;
             this.gbSummary.Text = "Summary:";
             // 
+            // btnEditHero
+            // 
+            this.btnEditHero.Location = new System.Drawing.Point(789, 449);
+            this.btnEditHero.Name = "btnEditHero";
+            this.btnEditHero.Size = new System.Drawing.Size(115, 23);
+            this.btnEditHero.TabIndex = 15;
+            this.btnEditHero.Text = "Edit Hero";
+            this.btnEditHero.UseVisualStyleBackColor = true;
+            this.btnEditHero.Click += new System.EventHandler(this.btnEditHero_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 625);
+            this.Controls.Add(this.btnEditHero);
             this.Controls.Add(this.gbSummary);
             this.Controls.Add(this.dgvHeroes);
-            this.Controls.Add(this.btnViewAll);
+            this.Controls.Add(this.btnDeleteHero);
             this.Controls.Add(this.btnAddHero);
             this.Controls.Add(this.lblExamScore);
             this.Controls.Add(this.lblHeroSuperpower);
@@ -184,11 +199,17 @@ namespace PRG282_Project
             this.Controls.Add(this.txtHeroID);
             this.Name = "MainForm";
             this.Text = "One Kick Heroes";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numHeroExamScore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHeroes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void btnViewAll_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
@@ -204,12 +225,10 @@ namespace PRG282_Project
         private System.Windows.Forms.Label lblHeroSuperpower;
         private System.Windows.Forms.Label lblExamScore;
         private System.Windows.Forms.Button btnAddHero;
-        private System.Windows.Forms.Button btnViewAll;
+        private System.Windows.Forms.Button btnDeleteHero;
         private System.Windows.Forms.DataGridView dgvHeroes;
         private System.Windows.Forms.GroupBox gbSummary;
+        private System.Windows.Forms.Button btnEditHero;
     }
-}
-
-
 }
 
