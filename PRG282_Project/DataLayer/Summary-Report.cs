@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
+using PRG282_Project.BusinessLogicLayer;
 
 namespace PRG282_Project.DataLayer
 {
@@ -57,37 +59,36 @@ namespace PRG282_Project.DataLayer
         }
 
         public void LoadHeroesIntoGrid(DataGridView dgv)
-{
-    if (!File.Exists(filePath))
-    {
-        dgv.DataSource = null;
-        return;
-    }
+        {
+            if (!File.Exists(filePath))
+            {
+                dgv.DataSource = null;
+                return;
+            }
 
-    var lines = File.ReadAllLines(filePath);
-    DataTable dt = new DataTable();
-    dt.Columns.Add("Hero ID");
-    dt.Columns.Add("Name");
-    dt.Columns.Add("Age");
-    dt.Columns.Add("Superpower");
-    dt.Columns.Add("Exam Score");
-    dt.Columns.Add("Rank");
-    dt.Columns.Add("Threat Level");
+            var lines = File.ReadAllLines(filePath);
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Hero ID");
+            dt.Columns.Add("Name");
+            dt.Columns.Add("Age");
+            dt.Columns.Add("Superpower");
+            dt.Columns.Add("Exam Score");
+            dt.Columns.Add("Rank");
+            dt.Columns.Add("Threat Level");
 
-    foreach (var line in lines)
-    {
-        var parts = line.Split(',');
-        if (parts.Length == 7)
-            dt.Rows.Add(parts);
-    }
+            foreach (var line in lines)
+            {
+                var parts = line.Split(',');
+                if (parts.Length == 7)
+                    dt.Rows.Add(parts);
+            }
 
-    dgv.DataSource = dt;
-    dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv.DataSource = dt;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-    // Sort by Hero ID ascending
-    dgv.Sort(dgv.Columns["Hero ID"], System.ComponentModel.ListSortDirection.Ascending);
-}
-
+            // Sort by Hero ID ascending
+            dgv.Sort(dgv.Columns["Hero ID"], System.ComponentModel.ListSortDirection.Ascending);
+        }
 
         public void DeleteHero(string heroID)
         {
@@ -129,6 +130,63 @@ namespace PRG282_Project.DataLayer
             }
 
             File.WriteAllLines(filePath, updated); // Save changes
+        }
+
+        public string GenerateSummary(List<Superhero> heroes)
+        {
+            int total = heroes.Count;
+            double avgAge = heroes.Count > 0 ? heroes.Average(h => h.SuperheroAge1) : 0;
+            double avgScore = heroes.Count > 0 ? heroes.Average(h => h.ExamScore1) : 0;
+
+            int sCount = heroes.Count(h => h.Rank1 == "S-Rank");
+            int aCount = heroes.Count(h => h.Rank1 == "A-Rank");
+            int bCount = heroes.Count(h => h.Rank1 == "B-Rank");
+            int cCount = heroes.Count(h => h.Rank1 == "C-Rank");
+
+            string summary =
+                $"Total Heroes: {total}\n" +
+                $"Average Age: {avgAge:F2}\n" +
+                $"Average Score: {avgScore:F2}\n" +
+                $"S-Rank: {sCount}\n" +
+                $"A-Rank: {aCount}\n" +
+                $"B-Rank: {bCount}\n" +
+                $"C-Rank: {cCount}\n";
+
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "summary.txt");
+            File.WriteAllText(filePath, summary);
+
+            return summary;
+        }
+
+        public List<Superhero> GetAllHeroes()
+        {
+            var heroes = new List<Superhero>();
+
+            if (!File.Exists(filePath))
+                return heroes;
+
+            foreach (var line in File.ReadAllLines(filePath))
+            {
+                var parts = line.Split(',');
+                if (parts.Length == 7)
+                {
+                    //parts: 0=ID, 1=Name, 2=Age, 3=Power, 4=Score, 5=Rank, 6=Threat Level
+                    if (int.TryParse(parts[0], out int id) && int.TryParse(parts[2], out int age) && int.TryParse(parts[4], out int score))
+                    {
+                        heroes.Add(new Superhero(
+                            id,               // SuperheroID1
+                            parts[1],         // SuperheroName1
+                            age,              // SuperheroAge1
+                            parts[3],         // SuperPower1
+                            score,            // ExamScore1
+                            parts[5],         // Rank1
+                            parts[6]          // ThreadLevel1
+                        ));
+                    }
+                }
+            }
+
+            return heroes;
         }
     }
 }
