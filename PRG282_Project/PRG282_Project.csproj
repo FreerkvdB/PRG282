@@ -49,10 +49,10 @@
     <Compile Include="BusinessLogicLayer\Superhero.cs" />
     <Compile Include="DataLayer\Summary-Report.cs" />
     <Compile Include="DataLayer\Superhero_Repo.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Presentation Layer\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Presentation Layer\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -79,8 +79,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="PresentationLayer\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
