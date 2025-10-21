@@ -127,8 +127,8 @@ namespace PRG282_Project
             txtHeroName.Clear();
             txtHeroAge.Clear();
             txtHeroSuperPower.Clear();
-            numHeroExamScore.Value = 0; 
-            originalHeroID = null; 
+            numHeroExamScore.Value = 0;
+            originalHeroID = null;
         }
 
         private void UpdateSummary()

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PRG282_Project.BusinessLogicLayer
 {
-    internal class Superhero
+    public class Superhero
     {
         private int SuperheroID;
         private string SuperheroName;

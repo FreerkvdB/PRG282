@@ -22,7 +22,7 @@ namespace PRG282_Project.Data_Layer
                 string text;
                 foreach (Superhero superhero in superheroes)
                 {
-                    text = superhero.SuperheroID1 + "," + superhero.SuperheroName1 + "," + superhero.SuperheroAge1 + "," 
+                    text = superhero.SuperheroID1 + "," + superhero.SuperheroName1 + "," + superhero.SuperheroAge1 + ","
                            + superhero.SuperPower1 + "," + superhero.ExamScore1 + "," + superhero.Rank1 + "," + superhero.ThreadLevel1;
 
                     sw.WriteLine(text); // Write the text to the file
@@ -39,12 +39,12 @@ namespace PRG282_Project.Data_Layer
             string filename = @"superheroes.txt";
             FileStream fs = new FileStream(filename, FileMode.OpenOrCreate); //Create a file stream to read from the file
 
-            StreamReader sr  = new StreamReader(fs); // Create a strem reader to read from the file
+            StreamReader sr = new StreamReader(fs); // Create a strem reader to read from the file
             string text;
             while ((text = sr.ReadLine()) != null)
             {
                 string[] strings = text.Split(',');
-                Superhero newsuperhero = new Superhero (int.Parse(strings[0]), strings[1], int.Parse(strings[2]), 
+                Superhero newsuperhero = new Superhero(int.Parse(strings[0]), strings[1], int.Parse(strings[2]),
                                          strings[3], int.Parse(strings[4]), strings[5], strings[6]);
                 superheroes.Add(newsuperhero);
             }
@@ -52,6 +52,6 @@ namespace PRG282_Project.Data_Layer
             fs.Close(); // Close the file stream
             return superheroes;
         }
-        
+
     }
 }

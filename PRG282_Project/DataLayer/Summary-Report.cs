@@ -170,7 +170,7 @@ namespace PRG282_Project.DataLayer
                 var parts = line.Split(',');
                 if (parts.Length == 7)
                 {
-                    //parts: 0=ID, 1=Name, 2=Age, 3=Power, 4=Score, 5=Rank, 6=Threat Level
+                    // parts: 0=ID,1=Name,2=Age,3=Power,4=Score,5=Rank,6=Threat
                     if (int.TryParse(parts[0], out int id) && int.TryParse(parts[2], out int age) && int.TryParse(parts[4], out int score))
                     {
                         heroes.Add(new Superhero(

@@ -1,0 +1,2 @@
+1,Frozone,40,Ice,80,A-Rank,Midterm Madness
+2,Mr Incredible,50,Strength,91,S-Rank,Finals Week
